@@ -278,7 +278,7 @@ class BaseTrainer(object):
             return resume, current_epoch, current_iteration
         # Load checkpoint
         checkpoint = torch.load(
-            checkpoint_path, map_location=lambda storage, loc: storage)
+            checkpoint_path, map_location=lambda storage, loc: storage, encoding='latin1')
         current_epoch = 0
         current_iteration = 0
         if resume:
