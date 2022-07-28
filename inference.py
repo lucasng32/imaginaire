@@ -70,7 +70,7 @@ def main():
                           opt_G, opt_D,
                           sch_G, sch_D,
                           None, test_data_loader)
-
+    """
     if args.checkpoint == '':
         # Download pretrained weights.
         pretrained_weight_url = cfg.pretrained_weight
@@ -80,7 +80,7 @@ def main():
         default_checkpoint_path = args.config.split('.yaml')[0] + '-' + cfg.pretrained_weight + '.pt'
         args.checkpoint = get_checkpoint(default_checkpoint_path, pretrained_weight_url)
         print('Checkpoint downloaded to', args.checkpoint)
-
+    """
     # Load checkpoint.
     trainer.load_checkpoint(cfg, args.checkpoint)
 
