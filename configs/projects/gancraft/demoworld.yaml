@@ -12,7 +12,7 @@ inference_args:
     # 7: Camera really far away looking down at a 45deg angle
     camera_mode: 0
     # How many output images?
-    cam_maxstep: 10
+    cam_maxstep: 100
     # Which random seed to use for output image style?
     seed: 0
     # If a style image is not specified, a random style code will be used.
